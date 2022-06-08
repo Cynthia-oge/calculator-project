@@ -31,7 +31,7 @@ body{
     cursor: pointer;
     background-color: #c4c4c4;
     outline: none;
-    padding: 4px;
+    /* padding: 4px; */
     border-radius: 10px;
 }
 
@@ -39,7 +39,7 @@ body{
 .input-number{
    text-align: center;
    position: relative;
-   top: 250px;
+   top:120px;
    right: -100px;
    font-size: 2.5em;
 }
