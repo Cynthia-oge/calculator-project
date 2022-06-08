@@ -1,0 +1,71 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "poppin", sans-serif;
+    font-size: 30px;
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    /* text-align: center; */
+}
+
+/* use Grid to align the calculator button */
+.button-container{ 
+    /* height:300px;
+    border: 2px solid white; */
+    width: 400px;
+    height: 700px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows:  repeat(5, 1fr); */
+    grid-gap: 20px;
+}
+
+.button-container button{
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #c4c4c4;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* to position the zero i.e the dispay number using relative */
+.input-number{
+   text-align: center;
+   position: relative;
+   top: 340px;
+   right: -200px;
+   font-size: 2.5em;
+}
+
+/* equal-to button */
+#equal-sign{
+    grid-column: span 2;
+    background-color: rgb(108, 240, 108);
+}
+
+/* the delete button */
+#del-bttn{
+    background-color: rgb(235, 102, 53);
+}
+@media screen and (min-width: 1000px){
+.button-container{
+        width: 450px;
+    }
+
+    .button-container button{
+        padding: 15px;
+    }
+
+.input-number{
+    top: 150px;
+}
+    
+}
